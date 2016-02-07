@@ -46,6 +46,14 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.ViewHold
                 holder.tvOnline.setText("");
             }
             Picasso.with(context).load((String) model.fields.get("photo_50")).into(holder.img);
+
+            holder.setClickListener(new ItemClickListener() {
+                @Override
+                public void onClick(View view, int position, boolean isLongClick) {
+                    //Переход на страницу user
+
+                }
+            });
         } catch (JSONException e) {
             e.printStackTrace();
         }
