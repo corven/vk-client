@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">vk</string>
+    <string name="action_settings">Настройки</string>
+    <integer name="com_vk_sdk_AppId">5278772</integer>
+</resources>
